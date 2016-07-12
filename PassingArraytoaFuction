@@ -1,0 +1,13 @@
+
+template<typename arr_type, const int size>
+inline int numof(const arr_type (&IdontKnow)[size])
+{
+    return size;
+}
+
+int main()
+{
+    int a[] = {1,2,3,4,45,5,12,1,2,323,43,23,12,1};
+    int c = numof(a);
+    return 0 ;
+}
