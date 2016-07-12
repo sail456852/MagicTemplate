@@ -1,8 +1,8 @@
 
 template<typename arr_type, const int size>
-inline int numof(const arr_type (&IdontKnow)[size])
+inline int numof(const arr_type (&IdontKnow)[size]) //IdontKnow is a variable name ,which here is an array name
 {
-    return size;
+    return size;  //when creating function from template , the two types of info have been created .
 }
 
 int main()
@@ -11,3 +11,6 @@ int main()
     int c = numof(a);
     return 0 ;
 }
+
+
+//This works during the test , but I don't understand about the detail how this is done 
